@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 @font-face {
-    font-family: "Barlow Condensed";
-    src: url();
+    font-family: "Barlow-Condensed-400";
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: "Barlow-Condensed-700";
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: "Barlow-400";
+    src: url(fonts/Barlow/Barlow-Regular.ttf);
+}
+body{
+    overflow: hidden;
 }
 header{
     width: 90vw;
@@ -13,11 +24,39 @@ header{
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    padding:2rem;
+}
+.nav-menu{
+    display: none;
+}
+#menu{
+    display: none;
 }
 .nav-list{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    font-family: "Barlow-Condensed-700";
+    text-transform: uppercase;
+    color: hsl(230, 29%, 20%);
+}
+.nav-item a{
+    color: hsl(230, 29%, 20%);
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px ;
+}
+#round{
+    background-color: hsla(235, 7%, 65%, 0.678);
+    width: 5px;
+    border-radius: 100%;
+    height: 5px;
+}
+.login a{
+    color: hsl(231, 7%, 65%);
 }
 
 
@@ -27,37 +66,268 @@ header{
 
 
 
+main {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 8rem;
+    position: absolute;
+}
+#apre-area{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#p-new {
+    font-family: "Barlow-Condensed-400";
+    border-radius: 5rem;
+    padding: 1px 2px;
+    width: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: hsl(230, 29%, 20%);
+    color: white;
+}
+#p-description-apre{
+    text-transform: uppercase;
+    color: hsl(231, 7%, 65%);
+    font-family: "Barlow-Condensed-400";
 
+}
+#p-description-apre {
+    text-transform: uppercase;
+    color: hsl(231, 7%, 65%);
+    font-family: "Barlow-Condensed-400";
+    letter-spacing: 0.5rem;
+    font-size: 0.7rem;
+}
+#title {
+    font-family: "Barlow-Condensed-700";
+    color: hsl(230, 29%, 20%);
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    width: 36rem;
+}
+#p-description-title{
+    font-family: "Barlow-400";
+    color: hsl(230, 11%, 40%);
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+#btn-area{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
+#p-button {
+    text-transform: uppercase;
+    color: hsl(231, 7%, 65%);
+    font-family: "Barlow-Condensed-400";
+    letter-spacing: 0.2rem;
+    font-size: 0.7rem;
+}
+#btn-schedule {
+    cursor: pointer;
+    padding: 0.7rem;
+    background-color: hsl(0, 100%, 68%);
+    color: rgba(255, 255, 255, 0.911);
+    border-radius: 0.2rem;
+    text-decoration: none;
+    font-family: "Barlow-Condensed-700";
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+#btn-schedule:hover{
+    background-color: hsl(0, 76%, 59%);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#ilustration {
+    position: relative;
+    right: 0rem;
+}
+#ilustration-background {
+    background-color: hsl(207, 33%, 95%);
+    width: 50vw;
+    height: 50vh;
+    z-index: -1;
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    border-radius: 0 0 0 5rem;
+}
 
 
 .attribution {
     font-size: 11px; 
-    text-align: center; 
+    font-family: "Barlow-Condensed-400";
+    font-size: 1rem;
+    position: absolute;
+    top: 46rem;
+    left: 40vw;
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(230, 29%, 20%); 
+    font-family: "Barlow-Condensed-700";
+}
+
+@media (max-width:1580px) {
+    #ilustration {
+        position: relative;
+        right: 0rem;
+        width: 800px;
+    }
+    main {
+        gap: 1rem;
+    }
+}
+@media (max-width:1430px) {
+    #ilustration {
+        position: relative;
+        right: 0rem;
+        width: 700px;
+    }
+}
+@media (max-width:1390px) {
+    #ilustration {
+        position: relative;
+        right: 0rem;
+        width: 700px;
+    }
+
+}
+@media (max-width:1300px) {
+    #ilustration {
+        position: relative;
+        right: 0rem;
+        width: 700px;
+    }
+    main {
+        margin-top: 5rem;
+    }
+    #title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        width: 27rem;
+    }
+}
+@media (max-width:1173px) {
+    main {
+        gap: 1rem;
+    }
+    #title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        width: 23rem;
+    }
+    #p-description-apre {
+        letter-spacing: 0.3rem;
+    }
+
+}
+@media (max-width:1141px){
+    main {
+        gap: 1rem;
+        flex-direction: column;
+    }
+    #ilustration-area{
+        order: -1;
+    }
+    #ilustration {
+        position: relative;
+        width: 700px;
+        right: -13rem;
+    }
+    .attribution {
+        font-size: 11px;
+        font-family: "Barlow-Condensed-400";
+        font-size: 1rem;
+        position: absolute;
+        top: 58rem;
+    }
+    #title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        width: 29rem;
+    }
+    main {
+        gap: 1rem;
+        flex-direction: column;
+        width: 80vw;
+    }
+    #ilustration-background {
+        width: 80vw;
+        height: 35vh;
+    }
+}
+@media (max-width:938px){
+    #ilustration {
+        position: relative;
+        width: 700px;
+        right: 0rem;
+    }
+    main {
+        width: 100vw;
+    }
+}
+@media (max-width:729px){
+    #ilustration {
+        position: relative;
+        width: 700px;
+        right: 0rem;
+    }
+    main {
+        width: 100vw;
+    }
+    article{
+        width: 90vw;
+    }
+    #ilustration {
+        position: relative;
+        width: 600px;
+        right: 0rem;
+    }
+    .nav-menu {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 70vw;
+        background-color: white;
+        left: 7rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        top: 5rem;
+        z-index: 4;
+    }
+    #menu{
+        display: block;
+    }
+    .nav-item-menu{
+        font-family: "Barlow-Condensed-700";
+        text-transform: uppercase;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .nav-item-menu a{
+        text-decoration: none;
+        color: hsl(230, 29%, 20%);
+    }
+    .item-menu{
+        display: block;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        font-size: 1.3rem;
+    }
+    #round{
+        background-color: hsl(207, 33%, 95%);
+        width: 100%;
+        height: 1px;
+    }
 }

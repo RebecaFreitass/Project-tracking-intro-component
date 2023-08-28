@@ -2,37 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Project tracking intro component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
-
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
-  
+  <header>
+    <img src="images/logo.svg" alt="logo" id="logo-header">
+    <nav class="nav-list nav-menu ">
+      <p class="nav-item item-menu"><a href="">Product</a></p>
+      <p class="nav-item item-menu"><a href="">Features</a></p>
+      <p class="nav-item item-menu"><a href="">Pricing</a></p>
+      <p id="round"></p>
+      <p class="nav-item login item-menu"><a href="">Login</a></p>
+    </nav>
+      <img src="images/icon-hamburger.svg" alt="" id="menu">
+  </header>
+  <div id="ilustration-background"></div>
+<main>
+    <article>
+      <div id="apre-area">
+        <p id="p-new">New</p>
+        <p id="p-description-apre">Monograph Dashboard</p>
+      </div>
+      <h1 id="title">Powerful insights into your team</h1>
+      <p id="p-description-title">Project planning and time tracking for agile teams</p>
+      <div id="btn-area">
+        <a href="#" id="btn-schedule">Schedule a demo</a>
+         <p id="p-button">see a live preview</p>
+      </div>
+    </article>
+    <section id="ilustration-area">
+      <img src="images/illustration-devices.svg" alt="ilustration about computer and a phone" id="ilustration">
+    </section>
+</main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/RebecaFreitass">Rebeca Freitas</a>.
     </p>
   </footer>
 </body>
