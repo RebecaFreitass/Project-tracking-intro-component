@@ -288,20 +288,22 @@ main {
     }
     #ilustration {
         position: relative;
-        width: 600px;
+        width: 100vw;
         right: 0rem;
     }
     .nav-menu {
         display: flex;
         position: absolute;
         flex-direction: column;
-        width: 70vw;
+        width: 100vw;
+        height: 50vh;
         background-color: white;
-        left: 7rem;
+        left: 0rem;
         padding: 2rem;
         border-radius: 0.5rem;
-        top: 5rem;
+        top: 8vh;
         z-index: 4;
+        overflow-x: (100%);
     }
     #menu{
         display: block;
@@ -329,5 +331,47 @@ main {
         background-color: hsl(207, 33%, 95%);
         width: 100%;
         height: 1px;
+    }
+    .attribution {
+        top: 58rem;
+        left: 25%;
+    }
+}
+
+@media (max-width:600px){
+    #ilustration {
+        position: relative;
+        width: 100vw;
+        right: 0rem;
+    }
+    article {
+        width: 80vw;
+    }
+    #title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        width: 60%;
+    }
+    main {
+        width: 100vw;
+        gap: 4rem;
+    }
+    #btn-area {
+        justify-content: center;
+    }
+}
+@media (max-width:485px){
+    #title {
+        width: 70%;
+    }
+    #p-description-title {
+        font-size: 0.9rem;
+    }
+    #btn-schedule {
+        cursor: pointer;
+        padding: 0.6rem;
+    }
+    #btn-area {
+        justify-content: flex-start;
     }
 }
